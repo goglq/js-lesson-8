@@ -1,0 +1,45 @@
+#modal {
+    background-color: rgba(43, 255, 184, 0.534);
+    font-size: 20px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    transition: all 1000ms;
+}
+
+.nodispl {
+    transform: scaleY(0);
+}
+
+.rollup {
+    transform: scaleY(1);
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 1em;
+    width: fit-content;
+    padding: 5px 10px;
+    height: fit-content;
+}
+
+#showStudentsInAge {
+    margin-left: 20px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+#showAverageScoreOfStudents {
+    font-size: 18px;
+    font-weight: 700;
+}

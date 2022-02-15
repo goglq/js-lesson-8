@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="modal" class="nodispl">
+
+    </div>
+
+
+    <fieldset>
+        <legend>Add Student in group</legend>
+
+
+        <input type="text" id="studSurname" placeholder="Surname" required>
+        <input type="text" id="studName" placeholder="Name" required>
+        <input type="text" id="studPatronomic" placeholder="Patronomic">
+
+
+        <div>
+            <input type="email" id="studEmail" placeholder="Email">
+        </div>
+
+        <div>
+            <input type="url" id="studImage" placeholder="Image Url">
+        </div>
+
+        <p>
+            <span>Age of student</span>
+            <input type="number" id="studAge" placeholder="Age" required>
+        </p>
+
+
+
+        <p>
+            <span>Sex:</span>
+            <select name="sex" id="studSex" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </p>
+
+        <label>
+            <span>Average score:</span>
+            <select name="type" id="studAverageScore" required>
+                <option disabled>Select sverage score</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </label>
+
+        <p>
+            <button id="addStudentInGroup">Add in Group</button>
+        </p>
+
+    </fieldset>
+
+
+    <p>
+        <button id="showAllStudents">Show all students</button>
+        <button id="showStudentsInAge">Show students who Age &gt;</button> 
+        <input type="number" id="checkAge">
+    </p>
+
+    <p>
+        <button id="showStudentsInScore">Show students who Average Score &lt;</button>
+        <input type="number" id="checkScore">
+    </p>
+
+    <p>
+        <button id="showStudentsInSex">Show students who Sex is</button>
+        <select name="type" id="checkSex" required>
+            <option disabled>Select Sex of Students</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    <!-- </label> -->
+    </p>
+
+    <p>Average Score of all students: <span id="showAverageScoreOfStudents"></span></p>
+
+
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>№ п/п</th>
+                <th>Surname</th>
+                <th>Name</th>
+                <th>Patronomic</th>
+                <th>Student Age</th>
+                <th>Sex</th>
+                <th>Average score</th>
+                <th>Email</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody id="stTBody"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
